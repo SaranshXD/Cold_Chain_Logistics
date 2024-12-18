@@ -53,8 +53,8 @@ export default function DashContractor() {
     { text: "Dashboard", icon: <Dashboard /> ,route:"/dash1"},
     { text: "Inventory", icon: <Inventory2 /> , route: "/inv"},
     { text: "Orders", icon: <ShoppingCart /> , route:"/order" },
-    { text: "Monitoring", icon: <Thermostat /> },
-    { text: "Routes", icon: <Directions /> },
+    { text: "Monitoring", icon: <Thermostat /> ,route:'/conditions'},
+    { text: "Routes", icon: <Directions /> ,route:'/routes'},
     { text: "Warehouse", icon: <Store /> },
   ];
     // async function populateQuote(){
@@ -79,7 +79,7 @@ export default function DashContractor() {
       }}
     >
       <Toolbar>
-        <Typography variant="h6">Supply Chain</Typography>
+        <Typography width={{width:'100%'}} fontWeight={{fontWeight:'400'}} color='darkblue' borderRadius={{borderRadius:'10px'}} boxShadow={{boxShadow:'0 4px 8px 0 rgba(0, 0, 0, 0.06), 0 6px 20px 0 rgba(0, 0, 0, 0.04)'}} variant="h6">Cold Chain Logistics</Typography>
       </Toolbar>
       <List>
         {menuItems.map((item, index) => (

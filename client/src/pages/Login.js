@@ -45,7 +45,6 @@ function Login() {
       } else {
         navigate("/dashCustomer");
       }
-      navigate('/dash1')
       
       
       

@@ -14,6 +14,8 @@ import OrderDashboard from './pages/Orders.js';
 import DashContractor from './pages/dashContractor.js';
 import DashCustomer from './pages/dashCustomer.js'
 import { Inventory } from '@mui/icons-material';
+import MonitorConditions from './pages/MonitorConditions.js';
+import PlanRoute from './pages/PlanRoute.js'
 
 
 
@@ -29,6 +31,10 @@ export default function App() {
         <Route path='/order'exact element={<OrderDashboard/>}/>
         <Route path='/dashContractor'exact element={<DashContractor/>}/>
         <Route path='/dashCustomer'exact element={<DashCustomer/>}/>
+        <Route path='/conditions'exact element={<MonitorConditions/>}/>
+        <Route path='/routes'exact element={<PlanRoute/>}/>
+
+
 
         <Route path="/" element={<Navigate to="/register" replace={true} />}></Route>
         
