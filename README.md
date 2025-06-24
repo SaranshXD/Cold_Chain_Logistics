@@ -60,23 +60,41 @@ This project focuses on building a **Cold Chain Logistics** platform to ensure t
 ## 📂 Project Structure
 
 ```
-/cold-chain-logistics
+cold-chain-logistics/
 │
-├── backend/
-│   ├── models/
-│   ├── routes/
-│   ├── controllers/
-│   ├── server.js
-│
-├── frontend/
+├── client/                         # React Frontend
+│   ├── public/
+│   │   └── index.html
+│   │
 │   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
+│   │   ├── assets/                 # Static files (images, icons, etc.)
+│   │   ├── components/             # Reusable UI components
+│   │   ├── pages/                  # Page components (Home, Login, Dashboard, etc.)
+│   │   ├── styles/                 # CSS/Tailwind styling
 │   │   ├── App.js
+│   │   ├── App.css
+│   │   ├── index.js
+│   │   └── setupTests.js
+│   │
+│   ├── .gitignore
+│   ├── package.json
+│   ├── tailwind.config.js
+│   └── README.md
 │
-├── .env
-├── README.md
-├── package.json
+├── server/                         # Express Backend
+│   ├── controllers/                # Route logic (e.g., auth, inventory)
+│   ├── middleware/                 # Auth, error handlers
+│   ├── models/                     # Mongoose schemas
+│   ├── routes/                     # Express routes
+│   ├── config/                     # DB config, constants
+│   ├── utils/                      # Utility functions (e.g., fetchUser)
+│   ├── db.js                       # MongoDB connection
+│   ├── server.js                   # Main entry point
+│   ├── .gitignore
+│   └── package.json
+│
+└── README.md                       # Project overview (root-level if needed)
+
 ```
 
 ---
